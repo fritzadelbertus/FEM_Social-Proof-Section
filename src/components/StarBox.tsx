@@ -7,7 +7,7 @@ type StarBoxProp = {
 function StarBox({rate}: StarBoxProp) {
   const stars = []
   for (let i = 0; i < rate; i++) {
-    stars.push(<img src={startSVG} />)
+    stars.push(<img src={startSVG} alt="star icon"/>)
   }
   return (
     <div className='StarBox'>
