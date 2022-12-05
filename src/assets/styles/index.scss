@@ -1,0 +1,29 @@
+@import './SocialProof.scss';
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: $white;;
+}
+.App {
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  & > picture {
+    position: absolute;
+    z-index: -1;
+    &:nth-child(1) {
+      top: 0;
+      left: 0;
+    }
+    &:nth-child(2) {
+      bottom: 0;
+      right: 0;
+    }
+  }
+}
